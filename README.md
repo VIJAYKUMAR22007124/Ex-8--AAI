@@ -1,7 +1,7 @@
- <H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+ <H3>B VIJAY KUMAR</H3>
+<H3>212222230173</H3>
 <H3>EX. NO.8</H3>
-<H3>DATE:</H3>
+<H3>DATE:06-05-2024</H3>
 <H1 ALIGN =CENTER>Implementation of Speech Recognition</H1>
 <H3>Aim:</H3> 
  To implement the conversion of live speech to text.<BR>
@@ -22,9 +22,31 @@ Step 11: Perform speech recognition with exceptional handling:<Br>
 •	A generic exception block captures any other unexpected errors.<Br>
 <H3>Program:</H3>
 
-Insert your code her
+```
+import speech_recognition as sr
+# initialize the reconizer
+r=sr.Recognizer()
+# set duration for the audio
+duration=5 # second
+# record audio
+print("say somthing:")
+
+with sr.Microphone() as source:
+    audio_date=r.listen(source,timeout=duration)
+try:
+    text=r.recognize_google(audio_date)
+    print("you said:",text)
+except sr.UnknownValueError:
+    print("sorry ,could not undersand audio")
+except sr.RequestError as e:
+    print(f'Error with the request to google speech recognation service:{e}')
+except Exception as e:
+    print(f'Error:{e}')
+```
 
 <H3> Output:</H3>
-Show the results here
+
+![WhatsApp Image 2024-05-06 at 13 37 49](https://github.com/VIJAYKUMAR22007124/Ex-8--AAI/assets/119657657/b53940d1-a2c9-433f-9a33-b4ba5d0e2d22)
+
 
 <H3> Result:</H3>
