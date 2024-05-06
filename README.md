@@ -1,7 +1,7 @@
  <H3>B VIJAY KUMAR</H3>
 <H3>212222230173</H3>
 <H3>EX. NO.8</H3>
-<H3>DATE:06-05-2024</H3>
+<H3>DATE : 06-05-2024</H3>
 <H1 ALIGN =CENTER>Implementation of Speech Recognition</H1>
 <H3>Aim:</H3> 
  To implement the conversion of live speech to text.<BR>
@@ -50,3 +50,5 @@ except Exception as e:
 
 
 <H3> Result:</H3>
+
+ Implemented the conversion of live speech to text.
